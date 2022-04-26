@@ -18,7 +18,8 @@
 
     ?>
 
-   <p>Hoje é dia <?=$data?>.<?=$nome1?> tem <?=$idade?> anos e mora em <?=$cidade?>. </p>
+   <p>Hoje é dia <?=$data?>.<?=$nome1?> tem <?=$idade?> anos e mora em <?=$cidade?>.</p>
+   
 
 </body>
 </html>
