@@ -27,7 +27,7 @@
 
 <h2>Array Associativo</h2>
 
-<?
+<?php
     $curso = [
         "nome" => "Programador Web",
         "carga_horaria" => 240,
@@ -40,8 +40,14 @@
 <h3>Acessando os dados</h3>
 
 <p>
-    O curso de <?=$curso["nome"]?> tem <?=$curso["carga_horaria"]?> horas.
+    O curso de <?=$curso["nome"]?> tem <?=$curso["carga_horaria"]?> horas
 </p>
 
 </body>
 </html>
+
+
+<h2>Funções de debug/depuração</h2>
+
+<pre><?=print_r($cursos)?></pre>
+<pre><?=var_dump($cursos)?></pre>
