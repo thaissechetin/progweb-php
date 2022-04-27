@@ -47,13 +47,13 @@
     <div>
         <ul class="cliente1">
             <li>Nome: <?=$cliente1[0]?></li>
-            <li>E-mail: <a href="#"><?=$cliente1[2]?></a></li>
+            <li>E-mail: <a href="email1.html"><?=$cliente1[2]?></a></li>
             <li>Idade: <?=$cliente1[1]?> anos</li>
         </ul>
         <hr>
         <ul class="cliente2">
             <li>Nome: <?=$cliente2[0]?></li>
-            <li>E-mail: <a href=""><?=$cliente2[2]?></a></li>
+            <li>E-mail: <a href="email1.html"><?=$cliente2[2]?></a></li>
             <li>Idade: <?=$cliente2[1]?> anos</li>
         </ul>
     </div>
