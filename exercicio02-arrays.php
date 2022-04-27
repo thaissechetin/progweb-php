@@ -9,6 +9,7 @@
         <style>
             div {
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: powderblue;
                 border: 2px solid blue;
                 display: inline-block;
                 margin: 15px;
