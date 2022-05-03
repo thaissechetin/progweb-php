@@ -58,7 +58,21 @@
     <p>Crie um array contendo os 12 meses do ano.</p>
     <p>Usando o loop, faça o nome dos meses aparecer em uma lista ordenada.</p>
 
-    
+    <?php
+    $meses = ["Janeiro", "Fevereiro", "Março","Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+    ?>
+
+    <?php
+    foreach ($meses as $key) {
+    ?>
+
+    <ul>
+        <li><?=$key?></li>
+    </ul>
+
+    <?php
+    }
+    ?>
    
 
 
