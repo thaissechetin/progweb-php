@@ -40,42 +40,84 @@
     <?php
         $j++;
     } while ($j <= 5);
-    ?> <hr>
+    ?>
+    <hr>
 
     <h3>For (para)</h3>
 
     <?php
-    
-    for( $i = 1; $i <= 3; $i++){
+
+    for ($i = 1; $i <= 3; $i++) {
     ?>
-        <p>Valor de i é <b><?=$i?></b></p>
-    
+        <p>Valor de i é <b><?= $i ?></b></p>
+
     <?php
     }
-    ?> <hr>
+    ?>
+    <hr>
 
     <h2>Exercício de array e loop</h2>
     <p>Crie um array contendo os 12 meses do ano.</p>
     <p>Usando o loop, faça o nome dos meses aparecer em uma lista ordenada.</p>
 
     <?php
-    $meses = ["Janeiro", "Fevereiro", "Março","Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+    $meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
     ?>
 
+
+    <!--Lista ol inicia e termina independentemente do php  -->
+    <ol>
+        <?php for ($i = 0; $i < count($meses); $i++) { ?>
+            <!-- ÍTENS LISTA DEPENDEM DO PHP FOR -->
+            <li><?= $meses[$i] ?></li>
+        <?php } ?>
+      
+    </ol>
+    <hr>
+
+    <h2>foreach(para cada)</h2>
+    <p>Loop exclusivo para arrays</p>
+
+    <ol>
+        <?php foreach ($meses as $mes) { ?>
+            <!-- para cada mês dentro de meses -->
+            <li> <?= $mes ?></li>
+        <?php } ?>
+    </ol>
+    <hr>
+
+
+ <h2>foreach com array associativo</h2>
+ <p>Formados por pares de chave => valor </p>
+
+
     <?php
-    foreach ($meses as $key) {
+    $curso = [
+        //chave (key) => valor (value)
+        "nome" => "Programador Web",
+        "carga_horaria" => 240,
+        "unidade" => "Penha",
+        "UCS" => 5
+
+    ];
+
+    foreach ($curso as $key => $value){
     ?>
 
-    <ul>
-        <li><?=$key?></li>
-    </ul>
+    <p> <?=$key?> - <?=$value?></p>
 
-    <?php
+    <?php 
     }
     ?>
-   
+
+
+
+
+
+
 
 
 </body>
 
-</html>
+</htm
+
