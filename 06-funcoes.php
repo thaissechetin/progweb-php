@@ -58,7 +58,7 @@ $desconto = 75.4789;
 $salarioMinimo = 1212;
 $novoSalario = 2500.47;
                                 //parâmetro com valor padrão(default)
-function formataNumero($valor, $casasDecimais = 2){
+function formataNumero(float $valor, int $casasDecimais = 2):string{
     return"R$ ".number_format($valor, $casasDecimais, ",", ".");
 }
 ?>
