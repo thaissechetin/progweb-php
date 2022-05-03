@@ -45,7 +45,7 @@
     <h3>For (para)</h3>
 
     <?php
-    //inicialização; condição; atualização
+    
     for( $i = 1; $i <= 3; $i++){
     ?>
         <p>Valor de i é <b><?=$i?></b></p>
@@ -58,21 +58,6 @@
     <p>Crie um array contendo os 12 meses do ano.</p>
     <p>Usando o loop, faça o nome dos meses aparecer em uma lista ordenada.</p>
 
-    <?php
-    $meses = ["Janeiro", "Fevereiro", "março", "abril", "maio","junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
-    $k = 0;
-    ?>
-
-    <?php
-    for ($k = 0; $k = 1; $k++){
-    ?>
-        <<ol>
-            <li><?=$meses?></li>
-        </ol>
-
-    <?php   
-    }
-    ?>
     
    
 
