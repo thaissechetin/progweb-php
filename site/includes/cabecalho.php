@@ -15,6 +15,7 @@
             <a href="index.php">Home</a>
             <a href="produtos.php">Produtos</a>
             <a href="servicos.php">serviços</a>
+            <a href="contato.php">Contato</a>
         </nav>
     </header>
 
