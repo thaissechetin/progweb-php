@@ -21,7 +21,7 @@
 
 <form action="" method="post">
     <div>
-        <label for="nome">Modelo:</label>
+        <label for="nome">Produto:</label>
         <input type="text" name="nome" id="nome">
     </div>
 
@@ -30,10 +30,10 @@
         <label for="Fabricante"> Fabricante:</label>
         <select name="fabricante" id="fabricante">
             <option>Escolha o fabricante</option>
-            <option>Volkswagen</option>
-            <option> Ford</option>
-            <option>Hyundai</option>
-            <option>Fiat</option>
+            <option>Nestlé</option>
+            <option> Cacau Show</option>
+            <option>Kopenhagen</option>
+            <option>Lindit</option>
         </select>
     </div>
 
