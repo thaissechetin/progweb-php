@@ -32,16 +32,16 @@
             <label for="Fabricante"> Fabricante:</label>
             <select name="fabricante" id="fabricante">
                 <option>Selecione o fabricante</option>
-                <option>Nestlé</option>
-                <option> Cacau Show</option>
-                <option>Kopenhagen</option>
-                <option>Lindit</option>
+                <option>LG</option>
+                <option> Apple</option>
+                <option>Sony</option>
+                <option>Motorola</option>
             </select>
         </div>
 
         <div class="preco"> 
-        <label for="produto">Preço:</label>
-            <input type="decimal" name="produto" id="produto">
+        <label for="preco">Preço:</label>
+            <input type="number" step="0.01" name= "preco" id="preco" min="100" max="1000">
 
         </div>
     
