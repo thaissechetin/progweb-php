@@ -41,7 +41,7 @@
 
         <div class="preco"> 
         <label for="produto">Preço:</label>
-            <input type="number" name="produto" id="produto">
+            <input type="decimal" name="produto" id="produto">
 
         </div>
     
@@ -58,6 +58,8 @@
 
     
         <button type="submit" name="cadastrar">Cadastrar Produto</button>
+
+    
     
     
     
