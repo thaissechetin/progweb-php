@@ -10,18 +10,19 @@
 <body>
 <h1>Exercício Formulário HTML com PHP</h1>
 
-<p>1) Crie um novo arquivo e nele faça um formulário para cadastro (simulação) de produtos com os seguintes campos:</p>
+<?php
+$fabricantes = [
+    "F0" => "Selecione o fabricante",
+    "F1" =>"LG",
+    "F2"=> "Apple", 
+    "F3" =>"Sony",
+    "F4" =>"Motorola"
+];
+?>
 
-<p>
-    - Nome do produto (campo de texto)
-    - Fabricante (`select` de opções com pelo menos 4 nomes de fabricantes)
-    - Preço (campo de número com valor mínimo de 100 e máximo de 10000, além de suporte à 2 casas decimais para os centavos)
-    - Quantidade (campo de número com valor mínimo de 0 e máximo de 50)
-    - Descrição (área de texto)
-</p>
 
 <main id="container">
-    <form action="" method="post">
+    <form action="" method="POST">
         <div class="produto">
             <label for="produto">Produto:</label>
             <input type="text" name="produto" id="produto">
@@ -31,11 +32,12 @@
         <div class="fabricante">
             <label for="Fabricante"> Fabricante:</label>
             <select name="fabricante" id="fabricante">
-                <option>Selecione o fabricante</option>
-                <option>LG</option>
-                <option> Apple</option>
-                <option>Sony</option>
-                <option>Motorola</option>
+                <?php
+                foreach ($fabricantes as $id => $nome_fabricante){?>
+                     <option value= <?=$id?>> <?=$nome_fabricante?> </option>
+            <?php     
+            } 
+            ?>
             </select>
         </div>
 
