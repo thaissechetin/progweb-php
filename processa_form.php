@@ -19,7 +19,7 @@ $descricao = $_POST["descricao"];
 
 <ul>
     <li>Produto: <?=$produto?></li>
-    <li> Fabricante: <?=$fabricantes?></li>
+    <li> Fabricante: <?=$id?></li>
     <li>Preço: R$ <?=$preco?></li>
     <li>Quantidade: <?=$quantidade?></li>
     <li>Descrição: <?=$descricao?></li>
