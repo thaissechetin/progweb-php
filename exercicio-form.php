@@ -10,15 +10,7 @@
 <body>
 <h1>Exercício Formulário HTML com PHP</h1>
 
-<?php
-$fabricantes = [
-    "F0" => "Selecione o fabricante",
-    "F1" =>"LG",
-    "F2"=> "Apple", 
-    "F3" =>"Sony",
-    "F4" =>"Motorola"
-];
-?>
+
 
 
 <main id="container">
@@ -30,16 +22,18 @@ $fabricantes = [
     
     
         <div class="fabricante">
-            <label for="Fabricante"> Fabricante:</label>
-            <select name="fabricante" id="fabricante">
-                <?php
-                foreach ($fabricantes as $id => $nome_fabricante){?>
-                     <option value= <?=$id?>> <?=$nome_fabricante?> </option>
-            <?php     
-            } 
-            ?>
-            </select>
+        <label for="fabricante">Fabricante:</label>
+        <select name="fabricante" id="fabricante">
+            <?php
+            $fabricantes = ["Selecione o fabricante", "LG", "Apple", "Sony", "Motorola"];
+            foreach ($fabricantes as $fabricante){ ?>
+            <option> <?=$fabricante?></option>
+            <?php
+            } ?>
+        </select>
         </div>
+
+
 
         <div class="preco"> 
         <label for="preco">Preço:</label>
