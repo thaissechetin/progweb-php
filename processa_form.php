@@ -11,8 +11,8 @@
 
 $produto = filter_input(INPUT_POST,"produto",FILTER_SANITIZE_SPECIAL_CHARS);
 $nome_fabricante = $_POST["fabricante"];
-$preco = filter_input(INPUT_POST, "preco",FILTER_SANITIZE_NUMBER_FLOAT);
-$quantidade = filter_input(INPUT_POST, "quantidade",FILTER_SANITIZE_NUMBER_INT); 
+$preco = filter_input(INPUT_POST, "preco",FILTER_VALIDATE_FLOAT);
+$quantidade = filter_input(INPUT_POST, "quantidade",FILTER_VALIDATE_INT); 
 $descricao = filter_input(INPUT_POST, "descricao", FILTER_SANITIZE_SPECIAL_CHARS);
 ?>
 
