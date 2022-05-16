@@ -8,18 +8,19 @@
 </head>
 <body>
 <?php
-$produto = $_POST["produto"];
-$fabricantes = $_POST["fabricante"];
-$preco = $_POST["preco"];
-$quantidade = $_POST["quantidade"];
-$descricao = $_POST["descricao"];
+
+$produto = filter_input(INPUT_POST,"produto",FILTER_SANITIZE_SPECIAL_CHARS);
+$nome_fabricante = $_POST["fabricante"];
+$preco = filter_input(INPUT_POST, "preco",FILTER_SANITIZE_NUMBER_FLOAT);
+$quantidade = filter_input(INPUT_POST, "quantidade",FILTER_SANITIZE_NUMBER_INT); 
+$descricao = filter_input(INPUT_POST, "descricao", FILTER_SANITIZE_SPECIAL_CHARS);
 ?>
 
 <h1>Dados do produto</h1>
 
 <ul>
     <li>Produto: <?=$produto?></li>
-    <li> Fabricante: <?=$id?></li>
+    <li> Fabricante: <?=$nome_fabricante?> </li>
     <li>Preço: R$ <?=$preco?></li>
     <li>Quantidade: <?=$quantidade?></li>
     <li>Descrição: <?=$descricao?></li>
