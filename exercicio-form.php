@@ -11,35 +11,36 @@
 <h1>Exercício Formulário HTML com PHP</h1>
 
 <?php
-$fabricantes = [
-    "F0" => "Selecione o fabricante",
-    "F1" =>"LG",
-    "F2"=> "Apple", 
-    "F3" =>"Sony",
-    "F4" =>"Motorola"
-];
+// $fabricantes = [
+//     "F0" => "Selecione o fabricante",
+//     "F1" =>"LG",
+//     "F2"=> "Apple", 
+//     "F3" =>"Sony",
+//     "F4" =>"Motorola"
+// ];
+$fabricante = [ "lg","apple", "sony", "motorola"];
 ?>
 
 
 <main id="container">
-    <form action="" method="POST">
+    <form action="processa_form.php" method="POST">
         <div class="produto">
             <label for="produto">Produto:</label>
             <input type="text" name="produto" id="produto">
         </div>
     
     
-        <div class="fabricante">
+        
             <label for="Fabricante"> Fabricante:</label>
             <select name="fabricante" id="fabricante">
                 <?php
-                foreach ($fabricantes as $id => $nome_fabricante){?>
-                     <option value= <?=$id?>> <?=$nome_fabricante?> </option>
+                foreach ($fabricantes as  $fabricante){?>
+                     <option value=>  <?=$fabricante?> </option>
             <?php     
             } 
             ?>
             </select>
-        </div>
+        
 
         <div class="preco"> 
         <label for="preco">Preço:</label>
